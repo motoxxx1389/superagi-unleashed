@@ -1,0 +1,3 @@
+pyinstaller
+nsis
+pywin32
