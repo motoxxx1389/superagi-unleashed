@@ -1,0 +1,26 @@
+# Specification for SuperAGI-Unleashed Toolkit
+
+## Overview
+The SuperAGI-Unleashed Toolkit is a repository that enables SuperAGI agents to create Windows .exe applications that can be installed upon opening them. The toolkit will have a user-friendly interface that allows agents to input their code, compile it into an .exe file, and package it into an installer.
+
+## Core Features
+1. **Code Input**: The toolkit should allow users to input their code, either by typing it directly into a text editor or by uploading a file.
+2. **Code Compilation**: The toolkit should be able to compile the input code into a Windows .exe application.
+3. **Installer Packaging**: The toolkit should be able to package the .exe application into an installer that installs the application upon opening.
+
+## Core Classes, Functions, and Methods
+1. **CodeEditor Class**: This class handles the code input feature. It should have methods for typing in code and uploading a file.
+2. **Compiler Class**: This class handles the code compilation feature. It should have a method that compiles the input code into a .exe application.
+3. **Packager Class**: This class handles the installer packaging feature. It should have a method that packages the .exe application into an installer.
+4. **SuperAGIUnleashed Class**: This is the main class of the toolkit. It should instantiate the CodeEditor, Compiler, and Packager classes and use their methods to create the .exe application and its installer.
+
+## Dependencies
+1. **PyInstaller**: This is a Python package that freezes (packages) Python applications into stand-alone executables. It will be used in the Compiler class to compile the code into a .exe application.
+2. **Inno Setup**: This is a free script-driven installation system created in Delphi. It will be used in the Packager class to package the .exe application into an installer.
+3. **Python Standard Library**: This will be used for basic functionalities such as file I/O operations.
+
+## Detailed Functionality
+1. **Code Input**: The CodeEditor class should provide a text editor where users can type in their code. It should also provide an option to upload a file containing the code. The code should be stored in a string variable.
+2. **Code Compilation**: The Compiler class should take the code string from the CodeEditor class and use PyInstaller to compile it into a .exe application. The .exe file should be stored in a specified directory.
+3. **Installer Packaging**: The Packager class should take the .exe file from the Compiler class and use Inno Setup to package it into an installer. The installer should be stored in a specified directory.
+4. **SuperAGIUnleashed Class**: This class should provide a user-friendly interface that guides users through the process of creating a .exe application and its installer. It should instantiate the CodeEditor, Compiler, and Packager classes and use their methods to create the .exe application and its installer.
