@@ -1,0 +1,46 @@
+Specification:
+
+Program Name: superagi-unleashed
+
+Program Description: 
+The superagi-unleashed is a toolkit repository designed for SuperAGI agents to develop Windows executable (.exe) applications. These applications should be installable upon opening them. The toolkit should provide a comprehensive suite of tools and libraries necessary for the development of such applications.
+
+Core Classes, Functions, and Methods:
+
+1. Class: ApplicationBuilder
+   - Purpose: This class will be responsible for the creation of the .exe application. It will include methods for setting up the application's properties and compiling it into an .exe file.
+
+2. Function: compile_to_exe(input_files, output_file)
+   - Purpose: This function will take the input files (source code, resources, etc.) and compile them into a single .exe file. It will use the PyInstaller or cx_Freeze library for the compilation process.
+
+3. Method: ApplicationBuilder.set_properties(app_name, app_version, app_description)
+   - Purpose: This method will be used to set the properties of the application (name, version, description). These properties will be embedded into the .exe file.
+
+4. Method: ApplicationBuilder.add_resources(resource_files)
+   - Purpose: This method will be used to add resource files (images, sounds, etc.) to the application. These resources will be embedded into the .exe file.
+
+5. Class: InstallerBuilder
+   - Purpose: This class will be responsible for creating an installer for the .exe application. It will include methods for setting up the installer's properties and compiling it into an .exe file.
+
+6. Function: create_installer(app_exe, installer_name)
+   - Purpose: This function will take the .exe application file and create an installer for it. It will use the Inno Setup or NSIS library for the creation process.
+
+Dependencies:
+
+1. PyInstaller or cx_Freeze: These libraries will be used to compile Python scripts into standalone .exe files.
+
+2. Inno Setup or NSIS: These tools will be used to create Windows installers for the .exe applications.
+
+3. Python: As the toolkit will be developed in Python, it is a necessary dependency.
+
+Considerations:
+
+1. The toolkit should be easy to use and should require minimal setup from the user. 
+
+2. The toolkit should provide detailed error messages to help users troubleshoot any issues they encounter.
+
+3. The toolkit should be compatible with the latest versions of Windows and Python.
+
+4. The toolkit should be thoroughly tested to ensure it works correctly and produces .exe applications that can be installed upon opening them. 
+
+5. The toolkit should be well-documented, with clear instructions on how to use each feature and examples of how to develop .exe applications.
