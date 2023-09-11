@@ -1,4 +1,4 @@
-from inno_setup import Script
+from innosetup import Script
 
 class InstallerBuilder:
     def __init__(self):
