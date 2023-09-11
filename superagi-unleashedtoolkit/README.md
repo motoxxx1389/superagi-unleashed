@@ -16,4 +16,5 @@ Now, let's create the Python files for these classes, functions, and methods.
 
 requirements.txt
 
-(If superagi doesnt install all the requirements then wait untill it is completely built and thn shut it back down with "Docker compose down" and then once it is shut all the way back down go to the terminal and enter "pip install pyinstaller" once complete then start the superagi program back up like normal "docker-compose up --build")
+(If superagi-unleashed doesnt install all the requirements then wait untill it is completely built and thn shut it back down with "Docker compose down" and then once it is shut all the way back down go to the terminal and enter "git clone https://github.com/idleberg/vscode-innosetup innosetup
+" once complete then start the superagi program back up like normal "docker-compose up --build")
