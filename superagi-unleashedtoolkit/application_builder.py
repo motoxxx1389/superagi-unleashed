@@ -1,4 +1,4 @@
-from pyinstaller import Executable
+import subprocess
 
 class ApplicationBuilder:
     def __init__(self):
@@ -15,12 +15,13 @@ class ApplicationBuilder:
     def add_resources(self, resource_files):
         self.resources.extend(resource_files)
 
-    def compile_to_exe(self, input_files, output_file):
-        exe = Executable(
-            script=input_files,
-            name=self.app_name,
-            version=self.app_version,
-            description=self.app_description,
-            resources=self.resources
-        )
-        exe.compile(output_file)
+    def compile_to_exe(self, input_file):
+        cmd = [
+            'pyinstaller',
+            '--name={}'.format(self.app_name),
+            '--version-file={}'.format(self.app_version),
+            # Add other options as needed
+            input_file
+        ]
+        subprocess.run(cmd)
+
