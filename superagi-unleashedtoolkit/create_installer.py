@@ -15,3 +15,4 @@ def create_installer(app_exe, installer_name):
         f.write(script)
 
     os.system(f'iscc installer_script.iss')
+
