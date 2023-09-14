@@ -18,3 +18,5 @@ requirements.txt
 
 (If superagi-unleashed doesnt install all the requirements then wait untill it is completely built and thn shut it back down with "Docker compose down" and then once it is shut all the way back down go to the terminal and enter "git clone https://github.com/idleberg/vscode-innosetup innosetup
 " once complete then start the superagi program back up like normal "docker-compose up --build")
+
+You may have to manually install pyinstaller, and if it errors from there, due to a path error, go to download it and copy the path it was downloaded into and add it into you environmental variables.
