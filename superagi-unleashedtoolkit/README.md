@@ -20,3 +20,6 @@ requirements.txt
 " once complete then start the superagi program back up like normal "docker-compose up --build")
 
 You may have to manually install pyinstaller/Inno-Setup, and if it errors from there, due to a path error, go to download it and copy the path it was downloaded into and add it into you environmental variables.
+
+Here is the link to the github repo for Inno-Setup:
+https://github.com/jrsoftware/issrc
