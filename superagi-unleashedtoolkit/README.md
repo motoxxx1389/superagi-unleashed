@@ -1,41 +1,39 @@
 #!/bin/bash
 
 # Overview:
-# This script provides an outline for creating standalone `.exe` applications and their respective installers.
+# This script outlines the process of creating standalone `.exe` applications and their installers.
 
 # Classes:
 
 # 1. ApplicationBuilder
-# Purpose: Handles the creation of the `.exe` application.
-# Key Methods:
-# - set_properties(app_name, app_version, app_description): Sets the application's metadata.
-# - add_resources(resource_files): Embeds resource files like images and sounds into the application.
+# - Purpose: Facilitates the creation of `.exe` applications.
+# - set_properties(app_name, app_version, app_description): Defines the application's metadata.
+# - add_resources(resource_files): Incorporates resources like images and sounds into the application.
 
 # 2. InstallerBuilder
-# Purpose: Manages the creation of an installer for the `.exe` application.
-# Key Methods:
-# - set_properties(app_exe, installer_name): Sets the properties for the installer.
+# - Purpose: Oversees the creation of an installer for the `.exe` application.
+# - set_properties(app_exe, installer_name): Defines the installer's properties.
 
 # Functions:
 
 # 1. compile_to_exe(input_files, output_file)
-# Purpose: Compiles input files into a single `.exe` file using PyInstaller or cx_Freeze.
+# - Purpose: Transforms input files into a singular `.exe` file, utilizing PyInstaller or cx_Freeze.
 
 # 2. create_installer(app_exe, installer_name)
-# Purpose: Creates an installer for the `.exe` application using Inno Setup or NSIS.
+# - Purpose: Generates an installer for the `.exe` application, leveraging Inno Setup or NSIS.
 
-# Installation Notes:
+# Installation Guidance:
 
-# If superagi-unleashed doesn't install all the requirements, follow these steps:
-# 1. Wait until the build is complete.
-# 2. Shut down the service: `docker-compose down`
-# 3. Clone the necessary repository: `git clone https://github.com/jrsoftware/issrc`
-# 4. Restart the service: `docker-compose up --build`
+# For superagi-unleashed:
+# 1. Allow the build to complete fully.
+# 2. Terminate the service using: `docker-compose down`
+# 3. Procure the required modules from the links provided below.
+# 4. Reactivate the service with: `docker-compose up --build`
 
-# Manual Installation:
-# - You might need to manually install PyInstaller and Inno-Setup.
-# - If there's a path error, download the tool and add its path to your environment variables.
+# Manual Installation Tips:
+# - PyInstaller and Inno-Setup might necessitate manual installation.
+# - In case of a path discrepancy, retrieve the tool and incorporate its path into your environment variables.
 
-# PyInstaller on Python: https://pypi.org/project/pyinstaller/
-# Inno-Setup GitHub Repo: https://github.com/jrsoftware/issrc
-
+# Relevant Links:
+# - PyInstaller: https://pypi.org/project/pyinstaller/
+# - Inno-Setup: https://pypi.org/project/innosetup/
