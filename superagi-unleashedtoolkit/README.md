@@ -29,7 +29,7 @@
 # If superagi-unleashed doesn't install all the requirements, follow these steps:
 # 1. Wait until the build is complete.
 # 2. Shut down the service: `docker-compose down`
-# 3. Clone the necessary repository: `git clone https://github.com/idleberg/vscode-innosetup innosetup`
+# 3. Clone the necessary repository: `git clone https://github.com/jrsoftware/issrc`
 # 4. Restart the service: `docker-compose up --build`
 
 # Manual Installation:
